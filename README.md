@@ -311,18 +311,49 @@ or <BR>
   - 스즈나(ID: `101601`)
     - `.skel` 파일 사용 <BR> <BR>
 
-### 02. 전투(배틀) 애니메이션과 기타 애니메이션에 사용하는 리소스 구분 방법?
+### 02. `.skel` 파일을 대체하여 다른 캐릭터 애니메이션으로 교체하려고 할 때 오류가 발생하는 경우?
+- 각 캐릭터 ID에 맞게 생성된 개별 `.cysp` 파일을 사용하는 `.skel` 파일이 아닌, 공통 `.cysp` 파일로 구성된 `.skel` 파일에서만 사용 가능합니다.
+  
+- 다음과 같이 '000000_'으로 시작하는 파일로 구성된 파일들끼리만 `.skel` 파일을 대체하여 사용할 수 있습니다.
+  ```
+  "000000_CHARA_BASE.cysp",
+  f"{CSV_COMMON_BATTLE_ID}_COMMON_BATTLE.cysp",
+  "000000_BATTLE.cysp",
+  "000000_DEAR.cysp",
+  "000000_NO_WEAPON.cysp",
+  "000000_POSING.cysp",
+  "000000_RACE.cysp",
+  "000000_RUN_JUMP.cysp",
+  "000000_SMILE.cysp",
+  ```
+
+- 다음과 같이 사용자가 직접 입력한 숫자에 맞게 개별 파일이 할당된 파일끼리는 `.skel` 파일을 대체하여 사용할 수 없습니다.
+  ```
+  f"{input_number}_CHARA_BASE.cysp",
+  f"{input_number}_COMMON_BATTLE.cysp",
+  f"{input_number}_BATTLE.cysp",
+  f"{input_number}_DEAR.cysp",
+  f"{input_number}_NO_WEAPON.cysp",
+  f"{input_number}_POSING.cysp",
+  f"{input_number}_RACE.cysp",
+  f"{input_number}_RUN_JUMP.cysp",
+  f"{input_number}_SMILE.cysp",
+  ```
+
+- `.skel` 파일 생성 시 사용 된 `.cysp` 파일은 `Priconne cysp To skel` 로그를 확인하세요. <BR> <BR>
+
+### 03. 전투(배틀) 애니메이션과 기타 애니메이션에 사용하는 리소스 구분 방법?
 - 전투(배틀): spine_sdnormal_'캐릭터 ID 또는 보스 ID'
 - 길드 하우스 및 기타: room_spineunit_'캐릭터 ID' <BR>
 - **❗ 중요:**
-  - 캐릭터 ID의 오른쪽 2번째는 캐릭터의 별의 수 이므로 콧코로(여름)(ID: `107601`)의 6성 리소스를 원하면 `107661`, 3성 리소스를 원하면 `107631` 이 할당 된 폴더 명을 찾아서 사용하십시오. <BR> <BR>
+  - 캐릭터 ID의 오른쪽 두 번째 숫자는 캐릭터의 별 수를 나타냅니다. 예를 들어, 콧코로(여름)(ID: `107601`)의 6성 리소스를 원하면 `107661`을, 3성 리소스를 원하면 `107631`을 할당된 폴더명에서 찾아 사용하십시오. <BR> <BR>
  
-### 03. SD 애니메이션에 사용되는 `.skel` 파일이 아닌 스토리에 사용되는 `.skel` 파일은?
-- 추가 작업 없이 'spine_full_캐릭터 ID 또는 보스 ID' 폴더 내 파일을 확인하면 됩니다. <BR>
+### 04. SD 애니메이션에 사용되는 `.skel` 파일이 아닌 스토리에 사용되는 `.skel` 파일은?
+- 추가 작업 없이 spine_full_'캐릭터 ID' 폴더 내 파일을 확인하면 됩니다. <BR>
 - **❗ 중요:**
-  - 캐릭터 ID의 오른쪽 2번째는 캐릭터의 별의 수 이므로 콧코로(여름)(ID: `107601`)의 6성 리소스를 원하면 `107661`, 3성 리소스를 원하면 `107631` 이 할당 된 폴더 명을 찾아서 사용하십시오. <BR> <BR>
+  - 캐릭터 ID의 오른쪽 두 번째 숫자는 캐릭터의 별 수를 나타냅니다. 예를 들어, 콧코로(여름)(ID: `107601`)의 6성 리소스를 원하면 `107661`을, 3성 리소스를 원하면 `107631`을 할당된 폴더명에서 찾아 사용하십시오. <BR> <BR>
  
-### 04. ネビア(Nebbia) 캐릭터에 사용되는 `.skel` 파일 생성 시 파일 이름이 `Character ID'_'Room Spineunit ID'_'Character Name'`로 할당하는 이유?
+### 05. ネビア(Nebbia) 캐릭터에 사용되는 `.skel` 파일 생성 시 파일 이름이 `Character ID'_'Room Spineunit ID'_'Character Name'`로 할당하는 이유?
 - Character ID와 실제로 사용하는 리소스의 ID가 서로 다르기 때문 <BR>
 - **❗ 중요:**
   - 캐릭터 ID : `118601`
