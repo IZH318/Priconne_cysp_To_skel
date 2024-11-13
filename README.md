@@ -249,6 +249,10 @@ or <BR>
     - **🎞 참고 자료:** <BR>
       ![_2024_11_11_01_04_41_605-ezgif com-optimize](https://github.com/user-attachments/assets/df722d34-77d9-4286-94bb-52514af6a729) <BR>
       (📌 캐릭터(フブキ) 전투(배틀) 애니메이션 확인) <BR> <BR>
+      ![_2024_11_11_01_11_57_432-ezgif com-optimize](https://github.com/user-attachments/assets/86d6c598-9c9f-4dc3-aca5-0c0956226236) <BR>
+      (📌 캐릭터(シズル&リノ) 전투(배틀) 애니메이션 확인) <BR> <BR>
+      ![_2024_11_11_01_12_19_218-ezgif com-optimize](https://github.com/user-attachments/assets/48801010-004d-4a1e-87b1-2b2eaf7b0c5c) <BR>
+      (📌 캐릭터(ミソギ&ミミ&キョウカ) 전투(배틀) 애니메이션 확인) <BR> <BR>
       ![_2024_11_11_01_07_12_193-ezgif com-optimize](https://github.com/user-attachments/assets/9a961ac0-6d7b-400a-8ef2-98bc3c6e7cc9) <BR>
       (📌 캐릭터(フブキ) 미니게임 애니메이션 확인) <BR> <BR>
 
