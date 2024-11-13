@@ -34,10 +34,10 @@
 1. Python 설치 파일을 실행 합니다. <BR> <BR>
 
 2. Python을 설치합니다. <BR> <BR>
-![2024-11-06 07 20 58](https://github.com/user-attachments/assets/66362323-9dea-4bd5-bd76-4f1c268c567b) <BR>
+![녹화_2024_11_11_00_00_59_380 mp4_snapshot_00 01 647](https://github.com/user-attachments/assets/80fa57f8-3364-486f-bb74-bee320d22f86) <BR>
 **[ ※ 주의 ] Python 설치 시 Add python.exe to PATH 에 반드시 체크 후 Install Now 클릭** <BR>
 (📌 미처 누르지 못했다면 설치 파일 다시 실행 또는 제거 후 재 설치) <BR> <BR>
-![2024-11-06 07 21 25](https://github.com/user-attachments/assets/0d83ce4b-c5f1-44cc-855e-87b974cf24b3) <BR>
+![녹화_2024_11_11_00_00_59_380 mp4_snapshot_00 44 244](https://github.com/user-attachments/assets/048bc5f3-fdf9-4f67-9211-f5450b584a90) <BR>
 **[ ※ 주의 ] 설치 후 Disable path length limit 기능을 사용할 수 있도록 반드시 클릭** <BR>
 (📌 미처 누르지 못했다면 설치 파일 다시 실행 후 작업 또는 제거 후 재 설치) <BR> <BR>
 
@@ -154,7 +154,8 @@ or <BR>
   - `AssetStudio` 사용 방법 및 필요 파일들은 아래 링크로 이동하여 확인하십시오.  
     🔗 URL: https://github.com/Perfare/AssetStudio <BR> <BR>
 
-  - `AssetStudio` 사용 시 `Options - Specify Unity version`에 추출할 데이터의 Unity Version을 직접 할당해야 합니다.  
+  - `AssetStudio` 사용 시 `Options - Specify Unity version`에 추출할 데이터의 Unity Version을 직접 할당해야 합니다. <BR> <BR>
+    ![녹화_2024_11_11_00_22_30_859 mp4_snapshot_00 01 861](https://github.com/user-attachments/assets/21b1b081-ba3e-4f94-bc3c-ab055989612d) <BR>
     (📌 현 시점 기준 Specify Unity version: 2021.3.20f1) <BR> <BR>
 
   - **🎞 참고 자료:** <BR>
@@ -262,8 +263,8 @@ or <BR>
 
     - **Java 21 설치**  
       아래 링크로 이동 후 **Java 21(JDK 21)** 을 다운로드 받고 설치합니다.  
-      🔗 URL: https://www.oracle.com/jp/java/technologies/downloads/#jdk21-windows  
-      (* 반드시 Java 21(JDK 21)을 다운로드 받고 설치해야 합니다.)
+      🔗 URL: https://www.oracle.com/jp/java/technologies/downloads/
+      (* 반드시 **Java 21(JDK 21)** 을 다운로드 받고 설치해야 합니다.)
 
     - **`SuperSpineViewer` 파일 이동**  
       다운로드 받은 `SuperSpineViewer` 파일을 적절한 위치로 이동합니다.
