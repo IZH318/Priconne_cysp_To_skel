@@ -69,11 +69,11 @@
 5. **데이터가 위치한 열의 헤더를 복사하여 코드 수정에 반영합니다.** <BR> <BR>
 
 - **📔 헤더 분석 가이드:**
-  ![CSV Header Info 01](https://github.com/user-attachments/assets/d255690f-d8a7-49ef-a5a8-f89436838499) <BR>
+  ![CSV Header Info_1](https://github.com/user-attachments/assets/2064cbea-6026-4e83-ba90-fcb09827b07e) <BR>
   (📌 캐릭터 관련 `.csv` 파일 헤더 분석) <BR> <BR>
-  ![CSV Header Info 02](https://github.com/user-attachments/assets/27957200-ae2c-4dca-9f5a-9663b1bbd23c) <BR>
+  ![CSV Header Info_2](https://github.com/user-attachments/assets/6b0cdfdf-0ec2-4d50-8c77-a34ba5285f21) <BR>
   (📌 보스 관련 `.csv` 파일 헤더 분석) <BR> <BR>
-  ![CSV Header Info 03](https://github.com/user-attachments/assets/7af16557-0013-432a-b12d-67574bf53585) <BR>
+  ![CSV Header Info_3](https://github.com/user-attachments/assets/90b67742-2562-4465-917a-7ca00b5be582) <BR>
   (📌 분석한 내용 바탕으로 헤더 수정 방법, 각 항목 별로 특수기호에 맞게 내용 수정) <BR> <BR>
 
 <BR>
