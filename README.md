@@ -13,7 +13,7 @@
 ## 🔍 주요 기능
 - **Priconne CSV Header Finder**  
   캐릭터, 보스, Nebbia ID와 관련된 특정 헤더 값이 포함된 `.csv` 파일 자동 검색  
-  🔗 URL: [Introduce Priconne CSV Header Finder](https://github.com/IZH318/Priconne_cysp_To_skel/blob/main/Introduce%20Priconne%20CSV%20Header%20Finder.md)
+  🔗 URL: [Introduce Priconne CSV Header Finder](https://github.com/IZH318/Priconne_cysp_To_skel/blob/main/Introduce%20Priconne%20CSV%20Header%20Finder.md) <BR> <BR>
 
 - **Priconne cysp To skel**  
   사용자가 입력하는 정보에 맞게 `.skel` 파일 생성  
@@ -42,8 +42,11 @@
 (📌 미처 누르지 못했다면 설치 파일 다시 실행 후 작업 또는 제거 후 재 설치) <BR> <BR>
 
 3. cmd 실행 후 아래 내용을 참고하여 필요한 패키지를 업데이트(선택) 또는 설치 합니다. <BR> <BR>
-❗ Windows 환경 사용자는 `00. Install_required_Python_packages.bat` 을 실행하여 필요 패키지를 한 번에 설치할 수 있습니다. <BR> <BR>
-<BR> <BR>
+- ❗ Windows 환경 사용자는 `00. Install_required_Python_packages.bat` 을 실행하여 필요 패키지를 한 번에 설치할 수 있습니다. <BR> <BR>
+  - **🎞 참고 자료:** <BR>
+    ![_2024_11_11_00_03_44_651-ezgif com-optimize](https://github.com/user-attachments/assets/dd2c4c7f-362a-4589-8c43-c588ace0eb29) <BR>
+    (📌 파이썬 패키지 일괄 설치) <BR>
+<BR> <BR> <BR>
 3-1. **(선택사항, 생략가능) Python Package Update** <BR> <BR>
 (* 두 코드 중 하나 선택) <BR>
 `pip install --upgrade pip` <BR>
@@ -86,9 +89,7 @@ or <BR>
 (* 권한 오류 발생시 두 코드 중 하나 선택) <BR>
 `pip install xxhash --user` <BR>
 or <BR>
-`python -m pip install xxhash --user` <BR> <BR>
-- **🎞 참고 자료:** <BR>
-  ![_2024_11_11_00_03_44_651-ezgif com-optimize](https://github.com/user-attachments/assets/dd2c4c7f-362a-4589-8c43-c588ace0eb29) <BR>
+`python -m pip install xxhash --user` <BR>
 
 <BR>
 
@@ -117,11 +118,12 @@ or <BR>
     `/data/data/com.kakaogames.pcr` <BR> <BR>
 
 - **🎞 참고 자료:** <BR>
-  ![_2024_11_11_00_01_28_722-ezgif com-optimize](https://github.com/user-attachments/assets/31bae049-e6a2-4dee-b04c-8efe2d56de7c) <BR> <BR>
+  ![_2024_11_11_00_01_28_722-ezgif com-optimize](https://github.com/user-attachments/assets/31bae049-e6a2-4dee-b04c-8efe2d56de7c) <BR>
+  (📌 게임 데이터 사본 생성) <BR> <BR>
 
-### 2. **게임 데이터 이름 변경**  
+### 2. **게임 데이터 파일 이름 변경**  
 
-`PRICONNE EXTRACTION TOOLS(Portable)`의 `01. Manifest File Renamer.py`를 사용하여 원본 데이터의 이름을 변경하십시오.
+`PRICONNE EXTRACTION TOOLS(Portable)`의 `01. Manifest File Renamer.py`를 사용하여 원본 데이터의 파일 이름을 변경하십시오.
 
 `PRICONNE EXTRACTION TOOLS(Portable)` 사용 방법 및 필요 파일들은 아래 링크로 이동하여 확인하십시오.  
 🔗 URL: https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS_Portable <BR> <BR>
@@ -129,32 +131,35 @@ or <BR>
 - ❗ '🛠️ 설치' 단계에서 패키지를 모두 설치했다면 추가 작업 없이 바로 사용할 수 있습니다. <BR> <BR>
 
 - **🎞 참고 자료:** <BR>
-  ![_2024_11_11_00_14_53_225-ezgif com-optimize](https://github.com/user-attachments/assets/78bdb89a-3694-4491-8f7b-0d06b1378ed5) <BR> <BR>
+  ![_2024_11_11_00_14_53_225-ezgif com-optimize](https://github.com/user-attachments/assets/78bdb89a-3694-4491-8f7b-0d06b1378ed5) <BR>
+  (📌 게임 데이터 파일 이름 변경) <BR> <BR>
 
 ### 3. **게임 데이터 추출**  
 `.unity3d` 파일을 변환하여 리소스 파일을 추출해야 합니다.  
 
 - **방법 1**:  
-  `PRICONNE EXTRACTION TOOLS(Portable)`의 `02. unity3d File Converter.py`를 사용하여 `.unity3d` 파일 리소스를 추출하십시오.  
-  `PRICONNE EXTRACTION TOOLS(Portable)` 사용 방법 및 필요 파일들은 아래 링크로 이동하여 확인하십시오.  
-  🔗 URL: https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS_Portable <BR> <BR>
+  - `PRICONNE EXTRACTION TOOLS(Portable)`의 `02. unity3d File Converter.py`를 사용하여 `.unity3d` 파일 리소스를 추출하십시오.  
+  - `PRICONNE EXTRACTION TOOLS(Portable)` 사용 방법 및 필요 파일들은 아래 링크로 이동하여 확인하십시오.  
+    🔗 URL: https://github.com/IZH318/PRICONNE_EXTRACTION_TOOLS_Portable <BR> <BR>
   
   - ❗ '🛠️ 설치' 단계에서 패키지를 모두 설치했다면 추가 작업 없이 바로 사용할 수 있습니다. <BR> <BR>
 
   - **🎞 참고 자료:** <BR>
-    ![_2024_11_11_00_17_51_833-ezgif com-optimize](https://github.com/user-attachments/assets/c261774d-81d4-4df7-96ba-03639b13034b) <BR> <BR>
+    ![_2024_11_11_00_17_51_833-ezgif com-optimize](https://github.com/user-attachments/assets/c261774d-81d4-4df7-96ba-03639b13034b) <BR>
+    (📌 `.unity3d` 파일 리소스 추출) <BR> <BR>
 
 
 - **방법 2**:  
-  `AssetStudio`를 사용하여 원본 데이터의 이름을 변경하십시오.  
-  `AssetStudio` 사용 방법 및 필요 파일들은 아래 링크로 이동하여 확인하십시오.  
-  🔗 URL: https://github.com/Perfare/AssetStudio
+  - `AssetStudio`를 사용하여 `.unity3d` 파일 리소스를 추출하십시오.
+  - `AssetStudio` 사용 방법 및 필요 파일들은 아래 링크로 이동하여 확인하십시오.  
+    🔗 URL: https://github.com/Perfare/AssetStudio <BR> <BR>
 
-  `AssetStudio` 사용 시 `Options - Specify Unity version`에 추출할 데이터의 Unity Version을 직접 할당해야 합니다.  
-  (📌 현 시점 기준 Specify Unity version: 2021.3.20f1) <BR> <BR>
+  - `AssetStudio` 사용 시 `Options - Specify Unity version`에 추출할 데이터의 Unity Version을 직접 할당해야 합니다.  
+    (📌 현 시점 기준 Specify Unity version: 2021.3.20f1) <BR> <BR>
 
   - **🎞 참고 자료:** <BR>
-    ![_2024_11_11_00_22_30_859-ezgif com-optimize](https://github.com/user-attachments/assets/f02dd4ba-15fd-4352-81ff-2f8c62246b27) <BR> <BR>
+    ![_2024_11_11_00_22_30_859-ezgif com-optimize](https://github.com/user-attachments/assets/f02dd4ba-15fd-4352-81ff-2f8c62246b27) <BR>
+    (📌 `cysp.unity3d` 파일 리소스 추출) <BR> <BR>
 
 - **💡 작업 팁**
   - `.cysp.unity3d` 확장자를 가진 파일만 먼저 변환 후 `.skel` 파일을 생성하고, 필요한 리소스를 가진 `.unity3d` 파일을 변환하면 시간과 용량 모두 절약 할 수 있습니다. <BR> <BR>
@@ -176,7 +181,8 @@ or <BR>
 - 4-06. 모든 테이블이 `.csv` 파일로 생성되었다면 `SQLite to CSV Extractor`를 종료하십시오. <BR> <BR>
 
 - **🎞 참고 자료:** <BR>
-  ![_2024_11_11_00_56_23_685-ezgif com-optimize](https://github.com/user-attachments/assets/23d098cc-c900-496f-8863-3aac50105917) <BR> <BR>
+  ![_2024_11_11_00_56_23_685-ezgif com-optimize](https://github.com/user-attachments/assets/23d098cc-c900-496f-8863-3aac50105917) <BR>
+  (📌 `.db` 파일에 저장 된 각 테이블을 `.csv` 파일로 저장) <BR> <BR>
 
 
 ### 5. **특정 헤더 포함된 `.csv` 파일 검색**  
@@ -197,7 +203,8 @@ or <BR>
 - 5-04. CSV 파일 내용을 메모장, Excel 또는 기타 소프트웨어를 사용하여 확인합니다. <BR> <BR>
 
 - **🎞 참고 자료:** <BR>
-  ![_2024_11_11_00_58_45_344-ezgif com-optimize](https://github.com/user-attachments/assets/6b84faa0-81d2-4e07-bc28-0c9bd4868766) <BR> <BR>
+  ![_2024_11_11_00_58_45_344-ezgif com-optimize](https://github.com/user-attachments/assets/6b84faa0-81d2-4e07-bc28-0c9bd4868766) <BR>
+  (📌 `.csv` 파일에 저장 된 데이터 검색 및 사본 생성) <BR> <BR>
 
 
 ### 6. **`.skel` 파일 생성**  
@@ -217,9 +224,12 @@ or <BR>
 - 6-07. `Priconne cysp To skel`의 자세한 설명은 Introduce Priconne cysp To skel을 참고하십시오. <BR> <BR>
 
 - **🎞 참고 자료:** <BR>
-  ![_2024_11_11_01_02_11_814-ezgif com-optimize](https://github.com/user-attachments/assets/23417048-892f-4e5f-b251-28e0f1fa3215) <BR> <BR>
-  ![_2024_11_11_01_02_33_62-ezgif com-optimize](https://github.com/user-attachments/assets/39d5e3fb-8276-4146-aea5-241af70984bb) <BR> <BR>
-  ![_2024_11_11_01_17_45_794-ezgif com-optimize](https://github.com/user-attachments/assets/a80ba59b-fd1e-4ab2-844b-256fe6d650ae) <BR> <BR>
+  ![_2024_11_11_01_02_11_814-ezgif com-optimize](https://github.com/user-attachments/assets/23417048-892f-4e5f-b251-28e0f1fa3215) <BR>
+  (📌 캐릭터 `.skel` 파일 생성) <BR> <BR>
+  ![_2024_11_11_01_02_33_62-ezgif com-optimize](https://github.com/user-attachments/assets/39d5e3fb-8276-4146-aea5-241af70984bb) <BR>
+  (📌 기타 애니메이션 `.skel` 파일 생성) <BR> <BR>
+  ![_2024_11_11_01_17_45_794-ezgif com-optimize](https://github.com/user-attachments/assets/a80ba59b-fd1e-4ab2-844b-256fe6d650ae) <BR>
+  (📌 보스 `.skel` 파일 생성) <BR> <BR>
 
 ### 7. **확인**  
 
@@ -237,8 +247,10 @@ or <BR>
     🔗 URL: https://naganeko.pages.dev/chibi-gif/ <BR> <BR>
 
     - **🎞 참고 자료:** <BR>
-      ![_2024_11_11_01_04_41_605-ezgif com-optimize](https://github.com/user-attachments/assets/df722d34-77d9-4286-94bb-52514af6a729) <BR> <BR>
-      ![_2024_11_11_01_07_12_193-ezgif com-optimize](https://github.com/user-attachments/assets/9a961ac0-6d7b-400a-8ef2-98bc3c6e7cc9) <BR> <BR>
+      ![_2024_11_11_01_04_41_605-ezgif com-optimize](https://github.com/user-attachments/assets/df722d34-77d9-4286-94bb-52514af6a729) <BR>
+      (📌 캐릭터(フブキ) 전투(배틀) 애니메이션 확인) <BR> <BR>
+      ![_2024_11_11_01_07_12_193-ezgif com-optimize](https://github.com/user-attachments/assets/9a961ac0-6d7b-400a-8ef2-98bc3c6e7cc9) <BR>
+      (📌 캐릭터(フブキ) 미니게임 애니메이션 확인) <BR> <BR>
 
   - **방법 2**  
     아래 링크로 이동 후 `SuperSpineViewer`를 다운로드 받습니다.  
@@ -278,6 +290,7 @@ or <BR>
 
     - **🎞 참고 자료:** <BR>
       ![_2024_11_11_01_30_09_702-ezgif com-optimize](https://github.com/user-attachments/assets/126cdf66-32a3-4c16-bbb2-e40c3bf75366) <BR>
+      (📌 보스(ラットン) 애니메이션 확인) <BR>
 <BR>
 
 ## ❔ Q&A
