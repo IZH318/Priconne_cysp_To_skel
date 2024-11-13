@@ -589,8 +589,8 @@ def main():
                     number_files.remove(f"{input_number}_RUN_JUMP.cysp")
 
 
-            # 디버깅용 출력: TEMP_Folder가 올바르게 설정되었는지 확인
-            print(f"\n Copying files to: {TEMP_Folder}")
+            # 디버깅용: TEMP_Folder가 올바르게 설정되었는지 확인
+            # print(f"\n Copying files to: {TEMP_Folder}")
 
             # final_files 리스트 채우기
             for i in range(len(base_files)):
@@ -601,43 +601,39 @@ def main():
                 number_file_path = os.path.join(CYSP_DIR_PATH, number_file).replace("\\", "/")
                 base_file_path = os.path.join(CYSP_DIR_PATH, base_file).replace("\\", "/")
 
-                # 경로 출력
-                print(f"\n Checking {number_file} at {number_file_path}")
-                print(f" Checking {base_file} at {base_file_path}")
+                # # 디버깅용: 경로 출력
+                # print(f"\n Checking {number_file} at {number_file_path}")
+                # print(f" Checking {base_file} at {base_file_path}")
 
                 # 경로가 존재하는지 확인
                 if os.path.exists(number_file_path):
-                    print(f" Found {number_file}")
+                    # print(f" Found {number_file}")  # 디버깅용
                     final_files.append(number_file)
                     
                 elif os.path.exists(base_file_path):
-                    print(f" Found {base_file}")
+                    # print(f" Found {base_file}")  # 디버깅용
                     final_files.append(base_file)
                     
                 else:
                     print(f" Neither {number_file} nor {base_file} found.")
                     final_files.append(None)
 
-            # 최종 결과 출력 - 필터링 전
-            print(f"\n Final files before filtering: {final_files}")
+            # 디버깅용: 최종 결과 출력 - 필터링 전
+            # print(f"\n Final files before filtering: {final_files}")
 
             # None 값을 필터링하여 유효한 파일만 포함
             final_files = [file for file in final_files if file is not None]
 
-            # 최종 결과 출력 - 필터링 후
-            print(f"\n Final files after filtering: {final_files}")
+            # 디버깅용: 최종 결과 출력 - 필터링 후
+            # print(f"\n Final files after filtering: {final_files}")
 
             # 파일 유효성 검사
             if not final_files:
                 print("\n [ERROR] No valid files found. Exiting.")
-                
-            else:
-                for file in final_files:
-                    print(f"\n Valid file: {file}")
 
         elif input_number.startswith(('2', '3')):
             Boss_files = CSV_BASE_ID
-            print(f"{Boss_files}")
+            # print(f"{Boss_files}")  # 디버깅용
             
             Boss_files = [
                 f"{Boss_files}_CHARA_BASE.cysp",
@@ -662,13 +658,6 @@ def main():
         else:
             print("\n [ERROR] Invalid Character ID. Exiting.")
             continue
-
-        # final_files 리스트가 올바르게 채워졌는지 확인
-        if final_files:
-            print("\n Final files to be copied:", final_files)
-            
-        else:
-            print("[ERROR] final_files is empty.")
             
         # None 값을 필터링하여 유효한 파일만 포함
         final_files = [file for file in final_files if file is not None]
@@ -682,13 +671,14 @@ def main():
                 if file:
                     source_path = os.path.join(CYSP_DIR_PATH, file).replace("\\", "/")
                     destination_path = os.path.join(TEMP_Folder, file).replace("\\", "/")
-                    
-                    print(f"\n Attempting to copy {file} from {source_path} to {destination_path}")
+
+                    # 디버깅용: 파일 복사 상태 확인
+                    # print(f"\n Attempting to copy {file} from {source_path} to {destination_path}")
                     
                     # 파일이 실제로 존재하는지 확인
                     if os.path.exists(source_path):
                         shutil.copy2(source_path, destination_path)
-                        print(f" Copied {file} successfully.")
+                        # print(f" Copied {file} successfully.")  # 디버깅용
                         
                     else:
                         print(f"[ERROR] {file} does not exist at source path: {source_path}\n")
@@ -696,7 +686,7 @@ def main():
         for file in final_files:
             if file and os.path.exists(file):  # 파일이 None이 아니고 존재할 경우만 복사
                 destination = os.path.join(TEMP_Folder, file).replace("\\", "/")
-                print(f"\n Copying {file} to {destination}")
+                # print(f"\n Copying {file} to {destination}")  # 디버깅용
                 shutil.copy2(file, destination)
                 
         skel_filename = os.path.join(TEMP_Folder, f"{input_number}.skel").replace("\\", "/")
